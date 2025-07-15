@@ -1,0 +1,10 @@
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\obj\Debug\CarSimulator.csproj.AssemblyReference.cache
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\obj\Debug\CarSimulator.Properties.Resources.resources
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\obj\Debug\CarSimulator.csproj.GenerateResource.cache
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\obj\Debug\CarSimulator.csproj.CoreCompileInputs.cache
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\bin\Debug\CarSimulator.exe.config
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\bin\Debug\CarSimulator.exe
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\bin\Debug\CarSimulator.pdb
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\obj\Debug\CarSimulator.Form1.resources
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\obj\Debug\CarSimulator.exe
+D:\vishwa software\CarSimulator\CarSimulator\CarSimulator\obj\Debug\CarSimulator.pdb
