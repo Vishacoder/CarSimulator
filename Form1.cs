@@ -19,6 +19,11 @@ namespace CarSimulator
             // Nothing here for now
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+             
+        }
+
         private void mainTimer_Tick(object sender, EventArgs e)
         {
             if (goLeft && carBox.Left > 0) carBox.Left -= carSpeed;
