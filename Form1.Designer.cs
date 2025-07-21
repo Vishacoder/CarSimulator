@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.won1 = new System.Windows.Forms.PictureBox();
             this.ai1 = new System.Windows.Forms.PictureBox();
             this.car1 = new System.Windows.Forms.PictureBox();
@@ -39,6 +38,9 @@
             this.car2 = new System.Windows.Forms.PictureBox();
             this.roadTrack2 = new System.Windows.Forms.PictureBox();
             this.roadTrack1 = new System.Windows.Forms.PictureBox();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.won1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).BeginInit();
@@ -65,27 +67,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(560, 582);
             this.panel1.TabIndex = 0;
-            // 
-            // btnStart
-            // 
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(243, 642);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnStart.Size = new System.Drawing.Size(92, 35);
-            this.btnStart.TabIndex = 1;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 610);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Score: 0";
             // 
             // won1
             // 
@@ -158,7 +139,7 @@
             this.car2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.car2.TabIndex = 3;
             this.car2.TabStop = false;
-            //
+            // 
             // roadTrack2
             // 
             this.roadTrack2.BackColor = System.Drawing.Color.Transparent;
@@ -181,6 +162,32 @@
             this.roadTrack1.TabStop = false;
             this.roadTrack1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(243, 642);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnStart.Size = new System.Drawing.Size(92, 35);
+            this.btnStart.TabIndex = 1;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(239, 610);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Score: 0";
+            // 
+            // gameTimer
+            // 
+            this.gameTimer.Interval = 20;
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimerEvent);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,6 +199,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.won1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).EndInit();
@@ -218,6 +227,7 @@
         private System.Windows.Forms.PictureBox car4;
         private System.Windows.Forms.PictureBox ai1;
         private System.Windows.Forms.PictureBox won1;
+        private System.Windows.Forms.Timer gameTimer;
     }
 }
 

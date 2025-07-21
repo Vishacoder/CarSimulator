@@ -6,10 +6,16 @@ namespace CarSimulator
 {
     public partial class Form1 : Form
     {
-        int carSpeed = 5;
-        bool goLeft, goRight, goUp, goDown;
+        int roadSpeed;
+        int trafficSpeed;
+        int playerSpeed = 15;
+        int Score;
+        int carImage;
 
+        Random rand = new Random();
+        Random carPosition = new Random();
 
+        bool goleft, goright;
 
         public Form1()
         {
@@ -33,6 +39,23 @@ namespace CarSimulator
 
         }
 
+
+        private void keyisdown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void keyisup(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void gameTimerEvent(object sender, EventArgs e)
+        {
+
+        }
+
+     
         private void Form1_Load(object sender, EventArgs e)
         {
         }
@@ -42,7 +65,22 @@ namespace CarSimulator
              
         }
 
+        private void  changeAicars(PictureBox tempCar)
+        {
 
-      
+        }
+        private void gameOver()
+        {
+
+        }
+        private void ResetGame()
+        {
+
+        }
+        private void playSound()
+        {
+
+        }
+
     }
 }
