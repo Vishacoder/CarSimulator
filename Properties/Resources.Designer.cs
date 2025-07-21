@@ -143,9 +143,9 @@ namespace CarSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ChatGPT_Image_Jul_20__2025__12_21_59_AM {
+        internal static System.Drawing.Bitmap internImg {
             get {
-                object obj = ResourceManager.GetObject("ChatGPT_Image_Jul_20__2025__12_21_59_AM", resourceCulture);
+                object obj = ResourceManager.GetObject("internImg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
