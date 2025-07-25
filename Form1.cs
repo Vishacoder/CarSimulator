@@ -21,6 +21,7 @@ namespace CarSimulator
         {
             InitializeComponent();
             this.KeyPreview = true;
+            ResetGame();
 
             // Set parent to enable transparency
             won1.Parent = roadTrack1;
@@ -31,8 +32,7 @@ namespace CarSimulator
             car2.Parent = roadTrack2;
             car3.Parent = roadTrack1;
             car3.Parent = roadTrack2;
-            car4.Parent = roadTrack1;
-            car4.Parent = roadTrack2;
+           
             ai1.Parent = roadTrack1;
             ai1.Parent = roadTrack2;
 
@@ -42,17 +42,36 @@ namespace CarSimulator
 
         private void keyisdown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Left)
+            {
+                goleft = true;
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                goright = true;
+            }
         }
 
         private void keyisup(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Left)
+            {
+                goleft = false;
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                goright = false;
+            }
         }
 
         private void gameTimerEvent(object sender, EventArgs e)
         {
-
+            if (goleft == true && car1.Left > 70)
+            {
+                car1.Left -= playerSpeed;
+            }
+            if (goright == true && car1.Left < 415)
+            { car1.Left += playerSpeed; }
         }
 
      
@@ -75,8 +94,32 @@ namespace CarSimulator
         }
         private void ResetGame()
         {
+            btnStart.Enabled = false;
+            ai1.Visible = false;
+            won1.Visible = false;
+            goleft = false;
+            goright = false;
+            Score = 0;
+            won1.Image = Properties.Resources.internImg;
+
+            roadSpeed = 15;
+            trafficSpeed = 15;
+
+            car2.Top = carPosition.Next(200, 500) * -1;
+            car2.Left = carPosition.Next(80, 220);
+
+            car3.Top = carPosition.Next(200, 500) * -1;
+            car3.Left = carPosition.Next(350, 425);
+
+            gameTimer.Start();
 
         }
+
+        private void won1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void playSound()
         {
 
