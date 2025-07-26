@@ -8,7 +8,7 @@ namespace CarSimulator
     {
         int roadSpeed;
         int trafficSpeed;
-        int playerSpeed = 15;
+        int playerSpeed = 05;
         int Score;
         int carImage;
 
@@ -26,8 +26,10 @@ namespace CarSimulator
             // Set parent to enable transparency
             won1.Parent = roadTrack1;
             won1.Parent = roadTrack2;
-            car1.Parent = roadTrack1;
-            car1.Parent = roadTrack2;
+            car1.BackColor = Color.Transparent;
+          
+
+
             car2.Parent = roadTrack1;
             car2.Parent = roadTrack2;
             car3.Parent = roadTrack1;
@@ -84,6 +86,7 @@ namespace CarSimulator
             {
                 roadTrack1.Top = -582;
             }
+
         }
            
 
@@ -115,7 +118,7 @@ namespace CarSimulator
             Score = 0;
             won1.Image = Properties.Resources.internImg;
 
-            roadSpeed = 15;
+            roadSpeed = 05;
             trafficSpeed = 15;
 
             car2.Top = carPosition.Next(200, 500) * -1;
