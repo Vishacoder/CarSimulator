@@ -8,7 +8,7 @@ namespace CarSimulator
     {
         int roadSpeed;
         int trafficSpeed;
-        int playerSpeed = 05;
+        int playerSpeed = 10;
         int Score;
         int carImage;
 
@@ -30,10 +30,6 @@ namespace CarSimulator
           
 
 
-            car2.Parent = roadTrack1;
-            car2.Parent = roadTrack2;
-            car3.Parent = roadTrack1;
-            car3.Parent = roadTrack2;
            
             ai1.Parent = roadTrack1;
             ai1.Parent = roadTrack2;
@@ -87,6 +83,13 @@ namespace CarSimulator
                 roadTrack1.Top = -582;
             }
 
+            car2.Top += trafficSpeed;
+            car3.Top += trafficSpeed;
+
+            if (car2.Top > 583)
+            {
+                car2.Top = -10;
+            }
         }
            
 
@@ -102,7 +105,25 @@ namespace CarSimulator
 
         private void  changeAicars(PictureBox tempCar)
         {
+            carImage = rand.Next(1, 9);
 
+            switch(carImage)
+            {
+                case 1:
+                    tempCar.Image = Properties.Resources.Lambo; 
+                    break;
+                case 2:
+                    tempCar.Image = Properties.Resources.Bike2;
+                    break;
+                case 3:
+                    tempCar.Image = Properties.Resources.Truck1;
+
+                    break;
+                case 4:
+                    tempCar.Image = Properties.Resources.Autobus;
+                    break;
+
+            }
         }
         private void gameOver()
         {
@@ -118,8 +139,8 @@ namespace CarSimulator
             Score = 0;
             won1.Image = Properties.Resources.internImg;
 
-            roadSpeed = 05;
-            trafficSpeed = 15;
+            roadSpeed = 10;
+            trafficSpeed = 10;
 
             car2.Top = carPosition.Next(200, 500) * -1;
             car2.Left = carPosition.Next(80, 220);

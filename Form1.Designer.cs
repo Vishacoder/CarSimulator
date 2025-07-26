@@ -124,7 +124,8 @@
             // 
             // car2
             // 
-            this.car2.Location = new System.Drawing.Point(91, 67);
+            this.car2.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_19__2025__08_02_32_PM;
+            this.car2.Location = new System.Drawing.Point(114, 24);
             this.car2.Name = "car2";
             this.car2.Size = new System.Drawing.Size(78, 84);
             this.car2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +134,8 @@
             // 
             // car3
             // 
-            this.car3.Location = new System.Drawing.Point(386, 67);
+            this.car3.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_18__2025__07_35_36_PM;
+            this.car3.Location = new System.Drawing.Point(386, 50);
             this.car3.Name = "car3";
             this.car3.Size = new System.Drawing.Size(78, 84);
             this.car3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,16 +145,18 @@
             // won1
             // 
             this.won1.BackColor = System.Drawing.Color.Transparent;
-            this.won1.Location = new System.Drawing.Point(231, 221);
+            this.won1.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_20__2025__12_17_30_AM;
+            this.won1.Location = new System.Drawing.Point(157, 191);
             this.won1.Name = "won1";
-            this.won1.Size = new System.Drawing.Size(78, 84);
+            this.won1.Size = new System.Drawing.Size(239, 195);
             this.won1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.won1.TabIndex = 2;
             this.won1.TabStop = false;
             // 
             // ai1
             // 
-            this.ai1.Location = new System.Drawing.Point(91, 418);
+            this.ai1.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_19__2025__10_15_00_PM;
+            this.ai1.Location = new System.Drawing.Point(91, 428);
             this.ai1.Name = "ai1";
             this.ai1.Size = new System.Drawing.Size(78, 84);
             this.ai1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
