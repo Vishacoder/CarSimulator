@@ -72,7 +72,20 @@ namespace CarSimulator
             }
             if (goright == true && car1.Left < 415)
             { car1.Left += playerSpeed; }
+
+            roadTrack1.Top += roadSpeed;
+            roadTrack2.Top += roadSpeed;
+
+            if (roadTrack2.Top > 582)
+            {
+                roadTrack2.Top = -582;
+            }
+            if (roadTrack1.Top > 582)
+            {
+                roadTrack1.Top = -582;
+            }
         }
+           
 
      
         private void Form1_Load(object sender, EventArgs e)
@@ -116,6 +129,11 @@ namespace CarSimulator
         }
 
         private void won1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roadTrack2_Click(object sender, EventArgs e)
         {
 
         }
