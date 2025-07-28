@@ -225,6 +225,11 @@ namespace CarSimulator
 
         }
 
+        private void restartGame(object sender, EventArgs e)
+        {
+            ResetGame();
+        }
+
         private void playSound()
         {
 
