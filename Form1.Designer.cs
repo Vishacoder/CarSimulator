@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.btnStart = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtScore = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.ai1 = new System.Windows.Forms.PictureBox();
@@ -61,15 +61,15 @@
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // txtScore
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(239, 610);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Score: 0";
+            this.txtScore.AutoSize = true;
+            this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtScore.Location = new System.Drawing.Point(239, 610);
+            this.txtScore.Name = "txtScore";
+            this.txtScore.Size = new System.Drawing.Size(100, 25);
+            this.txtScore.TabIndex = 2;
+            this.txtScore.Text = "Score: 0";
             // 
             // gameTimer
             // 
@@ -104,7 +104,7 @@
             // won1
             // 
             this.won1.BackColor = System.Drawing.Color.Transparent;
-            this.won1.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_20__2025__12_17_30_AM;
+            this.won1.Image = global::CarSimulator.Properties.Resources.intern;
             this.won1.Location = new System.Drawing.Point(157, 191);
             this.won1.Name = "won1";
             this.won1.Size = new System.Drawing.Size(239, 195);
@@ -171,7 +171,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 711);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnStart);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -193,7 +193,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label txtScore;
         private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox roadTrack1;
