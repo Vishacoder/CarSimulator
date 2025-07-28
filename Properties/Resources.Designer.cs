@@ -73,6 +73,16 @@ namespace CarSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bike1 {
+            get {
+                object obj = ResourceManager.GetObject("Bike1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bike2 {
             get {
                 object obj = ResourceManager.GetObject("Bike2", resourceCulture);
@@ -86,26 +96,6 @@ namespace CarSimulator.Properties {
         internal static System.Drawing.Bitmap ChatGPT_Image_Jul_16__2025__09_34_12_PM {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT_Image_Jul_16__2025__09_34_12_PM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ChatGPT_Image_Jul_18__2025__07_35_36_PM {
-            get {
-                object obj = ResourceManager.GetObject("ChatGPT_Image_Jul_18__2025__07_35_36_PM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ChatGPT_Image_Jul_19__2025__08_02_32_PM {
-            get {
-                object obj = ResourceManager.GetObject("ChatGPT_Image_Jul_19__2025__08_02_32_PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +143,16 @@ namespace CarSimulator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Jepp1 {
+            get {
+                object obj = ResourceManager.GetObject("Jepp1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lambo {
             get {
                 object obj = ResourceManager.GetObject("Lambo", resourceCulture);
@@ -176,6 +176,16 @@ namespace CarSimulator.Properties {
         internal static System.Drawing.Bitmap silverCar {
             get {
                 object obj = ResourceManager.GetObject("silverCar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Suv {
+            get {
+                object obj = ResourceManager.GetObject("Suv", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -33,21 +33,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roadTrack1 = new System.Windows.Forms.PictureBox();
-            this.roadTrack2 = new System.Windows.Forms.PictureBox();
-            this.car1 = new System.Windows.Forms.PictureBox();
-            this.car2 = new System.Windows.Forms.PictureBox();
-            this.car3 = new System.Windows.Forms.PictureBox();
-            this.won1 = new System.Windows.Forms.PictureBox();
             this.ai1 = new System.Windows.Forms.PictureBox();
+            this.won1 = new System.Windows.Forms.PictureBox();
+            this.car3 = new System.Windows.Forms.PictureBox();
+            this.car2 = new System.Windows.Forms.PictureBox();
+            this.car1 = new System.Windows.Forms.PictureBox();
+            this.roadTrack2 = new System.Windows.Forms.PictureBox();
+            this.roadTrack1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.won1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.won1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStart
@@ -91,56 +91,15 @@
             this.panel1.Size = new System.Drawing.Size(560, 595);
             this.panel1.TabIndex = 3;
             // 
-            // roadTrack1
+            // ai1
             // 
-            this.roadTrack1.Image = global::CarSimulator.Properties.Resources.Road_2;
-            this.roadTrack1.Location = new System.Drawing.Point(0, -595);
-            this.roadTrack1.Name = "roadTrack1";
-            this.roadTrack1.Size = new System.Drawing.Size(560, 595);
-            this.roadTrack1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roadTrack1.TabIndex = 0;
-            this.roadTrack1.TabStop = false;
-            // 
-            // roadTrack2
-            // 
-            this.roadTrack2.Image = global::CarSimulator.Properties.Resources.Road_2;
-            this.roadTrack2.Location = new System.Drawing.Point(0, 0);
-            this.roadTrack2.Name = "roadTrack2";
-            this.roadTrack2.Size = new System.Drawing.Size(560, 595);
-            this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.roadTrack2.TabIndex = 1;
-            this.roadTrack2.TabStop = false;
-            // 
-            // car1
-            // 
-            this.car1.BackColor = System.Drawing.Color.Transparent;
-            this.car1.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_16__2025__09_34_12_PM;
-            this.car1.Location = new System.Drawing.Point(231, 504);
-            this.car1.Name = "car1";
-            this.car1.Size = new System.Drawing.Size(78, 84);
-            this.car1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.car1.TabIndex = 2;
-            this.car1.TabStop = false;
-            // 
-            // car2
-            // 
-            this.car2.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_19__2025__08_02_32_PM;
-            this.car2.Location = new System.Drawing.Point(114, 24);
-            this.car2.Name = "car2";
-            this.car2.Size = new System.Drawing.Size(78, 84);
-            this.car2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.car2.TabIndex = 2;
-            this.car2.TabStop = false;
-            // 
-            // car3
-            // 
-            this.car3.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_18__2025__07_35_36_PM;
-            this.car3.Location = new System.Drawing.Point(386, 50);
-            this.car3.Name = "car3";
-            this.car3.Size = new System.Drawing.Size(78, 84);
-            this.car3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.car3.TabIndex = 2;
-            this.car3.TabStop = false;
+            this.ai1.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_19__2025__10_15_00_PM;
+            this.ai1.Location = new System.Drawing.Point(91, 428);
+            this.ai1.Name = "ai1";
+            this.ai1.Size = new System.Drawing.Size(78, 84);
+            this.ai1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ai1.TabIndex = 2;
+            this.ai1.TabStop = false;
             // 
             // won1
             // 
@@ -153,15 +112,58 @@
             this.won1.TabIndex = 2;
             this.won1.TabStop = false;
             // 
-            // ai1
+            // car3
             // 
-            this.ai1.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_19__2025__10_15_00_PM;
-            this.ai1.Location = new System.Drawing.Point(91, 428);
-            this.ai1.Name = "ai1";
-            this.ai1.Size = new System.Drawing.Size(78, 84);
-            this.ai1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ai1.TabIndex = 2;
-            this.ai1.TabStop = false;
+            this.car3.Image = global::CarSimulator.Properties.Resources.Bike1;
+            this.car3.Location = new System.Drawing.Point(386, 50);
+            this.car3.Name = "car3";
+            this.car3.Size = new System.Drawing.Size(78, 84);
+            this.car3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.car3.TabIndex = 2;
+            this.car3.TabStop = false;
+            this.car3.Tag = "carLeft";
+            // 
+            // car2
+            // 
+            this.car2.Image = global::CarSimulator.Properties.Resources.Suv;
+            this.car2.Location = new System.Drawing.Point(114, 24);
+            this.car2.Name = "car2";
+            this.car2.Size = new System.Drawing.Size(78, 84);
+            this.car2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.car2.TabIndex = 2;
+            this.car2.TabStop = false;
+            this.car2.Tag = "carRight";
+            // 
+            // car1
+            // 
+            this.car1.BackColor = System.Drawing.Color.Transparent;
+            this.car1.Image = global::CarSimulator.Properties.Resources.ChatGPT_Image_Jul_16__2025__09_34_12_PM;
+            this.car1.Location = new System.Drawing.Point(231, 504);
+            this.car1.Name = "car1";
+            this.car1.Size = new System.Drawing.Size(78, 84);
+            this.car1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.car1.TabIndex = 2;
+            this.car1.TabStop = false;
+            // 
+            // roadTrack2
+            // 
+            this.roadTrack2.Image = global::CarSimulator.Properties.Resources.Road_2;
+            this.roadTrack2.Location = new System.Drawing.Point(0, 0);
+            this.roadTrack2.Name = "roadTrack2";
+            this.roadTrack2.Size = new System.Drawing.Size(560, 595);
+            this.roadTrack2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roadTrack2.TabIndex = 1;
+            this.roadTrack2.TabStop = false;
+            // 
+            // roadTrack1
+            // 
+            this.roadTrack1.Image = global::CarSimulator.Properties.Resources.Road_2;
+            this.roadTrack1.Location = new System.Drawing.Point(0, -595);
+            this.roadTrack1.Name = "roadTrack1";
+            this.roadTrack1.Size = new System.Drawing.Size(560, 595);
+            this.roadTrack1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.roadTrack1.TabIndex = 0;
+            this.roadTrack1.TabStop = false;
             // 
             // Form1
             // 
@@ -177,13 +179,13 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keyisdown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keyisup);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.car3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.won1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ai1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.won1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.car1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roadTrack1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
