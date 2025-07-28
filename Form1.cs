@@ -24,15 +24,13 @@ namespace CarSimulator
             ResetGame();
 
             // Set parent to enable transparency
-            won1.Parent = roadTrack1;
-            won1.Parent = roadTrack2;
+        
             car1.BackColor = Color.Transparent;
           
 
 
            
-            ai1.Parent = roadTrack1;
-            ai1.Parent = roadTrack2;
+         
 
 
         }
@@ -64,6 +62,10 @@ namespace CarSimulator
 
         private void gameTimerEvent(object sender, EventArgs e)
         {
+
+            txtScore.Text = "Score: " + Score;
+            Score++;
+
             if (goleft == true && car1.Left > 70)
             {
                 car1.Left -= playerSpeed;
@@ -86,14 +88,36 @@ namespace CarSimulator
             car2.Top += trafficSpeed;
             car3.Top += trafficSpeed;
 
-            if (car2.Top > 532)
+            if (car2.Top > 582)
             {
                 changeAicars(car2);
             }
-            if(car3.Top > 532)
+            if(car3.Top > 582)
             {
                 changeAicars(car3);
             }
+            if (car1.Bounds.IntersectsWith(car2.Bounds) || car1.Bounds.IntersectsWith(car3.Bounds))
+            {
+                gameOver();
+            }
+            if(Score > 40 && Score < 500 )
+            {
+               won1.Image = Properties.Resources.intern;
+            }
+
+            if (Score > 500 && Score < 2000 )
+            {
+                won1.Image= Properties.Resources.junior;
+                roadSpeed = 15;
+                trafficSpeed = 13;
+            }
+            if(Score >2000 )
+            {
+                won1.Image = Properties.Resources.senior;
+                roadSpeed = 20;
+                trafficSpeed = 18;
+            }
+
         }
            
 
@@ -109,7 +133,7 @@ namespace CarSimulator
 
         private void  changeAicars(PictureBox tempCar)
         {
-            carImage = rand.Next(1, 8);
+            carImage = rand.Next(1, 9);
 
             switch(carImage)
             {
@@ -138,7 +162,9 @@ namespace CarSimulator
                 case 8:
                     tempCar.Image = Properties.Resources.Suv;
                     break;
-
+                case 9:
+                    tempCar.Image = Properties.Resources.v8;
+                    break;
             }
 
             tempCar.Top = carPosition.Next(100, 400) * -1;
@@ -154,6 +180,16 @@ namespace CarSimulator
         }
         private void gameOver()
         {
+            gameTimer.Stop();
+            ai1.Visible = true;
+            car1.Controls.Add(ai1);
+            ai1.Location = new Point(-8, 5);
+            ai1.BackColor = Color.Transparent;
+
+            won1.Visible = true;
+            won1.BringToFront();
+
+            btnStart.Enabled = true;
 
         }
         private void ResetGame()
@@ -164,7 +200,7 @@ namespace CarSimulator
             goleft = false;
             goright = false;
             Score = 0;
-            won1.Image = Properties.Resources.internImg;
+            won1.Image = Properties.Resources.senior;
 
             roadSpeed = 10;
             trafficSpeed = 08;
